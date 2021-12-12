@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant App</title>
+   
+</head>
+<body>
+    
+    <div class="menu">
+        <h1 id="f1">Menu</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Search menu by food.."  size=100  id="myInput" onkeyup="searchItem()" style="border-style:none;">
+        </div>
+        
+        <div class="menu-item"></div>
+    </div>
+
+   
+    <div class="seperator"></div>
+    <div class="tables">
+        <h1 id="f2">Tables</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Search table" size=25 onkeyup="searchTable()" id="myTableInput" style="border-style:none;">
+        </div>
+        <div class="table"></div>
+       
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <div class="title">Table Billing</div>
+            <button data-close-button class="closeButton">&times;</button>
+        </div>
+        <div class="popupBody">
+            <table id="billData" border="0.1" width="5" cellspacing="5">
+            </table>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</div>
+<script src="myscript.js"></script>
+</body>
+</html>

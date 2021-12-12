@@ -1,0 +1,187 @@
+
+.menu{
+   
+    width: 70%;
+    float: right;
+    box-shadow: 10px grey;
+    
+   
+}
+.tables{
+    width: 30%;
+    float: left;
+   
+    box-shadow: 100px grey;
+   
+    
+}
+#f1{
+    text-align: center;
+}
+#f2{
+    text-align: center;
+}
+ .item-body{
+    
+    
+    max-width:100%;
+    height:200%;
+    padding-bottom: 10%;
+    box-shadow: 10px 10px whitesmoke;
+    margin-bottom: 100px;
+    
+}
+
+.search-box{
+    width:50%;
+    box-shadow: 5px 5px whitesmoke; 
+    
+}
+
+.table-body{
+    max-width:90%;
+    height:20%;
+    padding-bottom: 10%;
+    box-shadow: 10px 10px whitesmoke;
+    margin-bottom: 100px;
+}
+
+.seperator {
+    height: 100%;
+    width: 1px;
+    background: black;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 29%;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  .modal-content #bill-content{
+    position: relative;
+    top:20%;
+    left:20%;
+
+
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*
+  new code for popup
+  */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 4px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    height: 300px;
+  }
+  
+  .popup.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .popup-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px  black;
+    background-color: rgb(103, 155, 214)
+  }
+  
+  .popup-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .popup-header .closeButton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .popupBody {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .popup #generateBill {
+    position: relative;
+  
+    left: 80%;
+  }
+  
+  #generateBillButton{
+    position: relative;
+    background-color: rgb(11, 172, 46);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    height: 30px;
+    border: 1px;
+    top: -20px;
+    left: 50px;
+  }
+  #generateBillButton:hover{
+    background-color: rgb(25, 117, 43);
+  }
+  /*ended popup*/
+  
+  
